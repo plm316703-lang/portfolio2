@@ -106,7 +106,7 @@ html body {
 
 }
 .section-banner-1{
-    background-image:url(images/섹션배너1.png);
+    background-image:url(..images/섹션배너1.png);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -116,7 +116,7 @@ html body {
 }
 
 .section-banner-2{ 
-    background-image:url(images/섹션배너2.png);
+    background-image:url(..images/섹션배너2.png);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -125,7 +125,7 @@ html body {
     margin-top: 5px;
 } 
 .section-banner-3{ 
-    background-image:url(images/섹션배너3.png);
+    background-image:url(..images/섹션배너3.png);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ html body {
     margin-top: 5px;
 }
 .section-banner-4{ 
-    background-image:url(images/섹션배너4.png);
+    background-image:url(..images/섹션배너4.png);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -173,15 +173,15 @@ html body {
 .mobile-section-banner .section-banner{
 
 }.mobile-section-banner .section-banner-1{
-    background-image: url(images/모바일섹션배너1.png);
+    background-image: url(..images/모바일섹션배너1.png);
 }
 .mobile-section-banner .section-banner-2{
-    background-image: url(images/모바일섹션배너2.png);
+    background-image: url(..images/모바일섹션배너2.png);
 }.mobile-section-banner .section-banner-3{
-    background-image: url(images/모바일섹션배너3.png);
+    background-image: url(..images/모바일섹션배너3.png);
 }
 .mobile-section-banner .section-banner-4{
-    background-image: url(images/모바일섹션배너4.png);
+    background-image: url(..images/모바일섹션배너4.png);
 }
 .section-banner .section-banner-5{
     min-height: 275px;

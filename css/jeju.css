@@ -163,7 +163,7 @@
             object-fit: cover;   /* 중요: 영상 비율이 컨테이너와 달라도 빈 곳 없이 꽉 채움 */
         }
         .pc-section-banner1{
-            background-image:url("/image/섹션배너1.png");
+            background-image:url("../image/섹션배너1.png");
             background-position: 50% 50%;
             background-size:cover;
             background-repeat: no-repeat;
