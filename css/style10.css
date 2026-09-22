@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'GMarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+
+html body {
+    font-family: 'GMarketSansMedium';
+} 
+
+.pc-top-bar {
+
+}
+
+.pc-top-bar .top-bar__wrap-1 {
+}
+
+.top-bar__wrap-1_left {
+    /* border: 1px dashed red; */
+}
+
+.top-bar__wrap-1_center {
+    /* border: 1px dashed red; */
+}
+
+.top-bar__wrap-1_center > a {
+    
+}
+.top-bar__wrap-1_center > a > img {
+    
+}
+
+.top-bar__wrap-1_right {
+    /* border: 1px dashed red; */
+}
+.top-bar__wrap-1_right >nav > ul > li > a:hover {
+    color:#666;
+    transform: .3s;
+    
+}
+
+.top-bar__wrap-1_right .wrap-1_right_bottom {
+
+}
+.top-bar__wrap-1_right .wrap-1_right_bottom a {
+    font-size: 14px;
+    padding: 4px 20px;
+    border-radius: 30px;
+    color: white;
+    transition: color .5s;
+}
+.top-bar__wrap-1_right .wrap-1_right_bottom a:first-child {
+    background-color: #ff7e6b;
+    border: 1px solid #ff7e6b;
+}
+.top-bar__wrap-1_right .wrap-1_right_bottom a:first-child:hover{
+    background-color: #fff;
+    color: #ff7e6b;
+    
+}
+.top-bar__wrap-1_right .wrap-1_right_bottom a:last-child {
+    background-color: #10adb5;
+    border: 1px solid #10adb5;
+}
+.top-bar__wrap-1_right .wrap-1_right_bottom a:last-child:hover {
+    background-color: #1c8c92;
+    
+}
+.login-widget {
+
+}
+.login-widget > ul > li > a {
+    font-size: 12px;
+    padding: 0 10px;
+    color: #888;
+    transition: color .3s;
+}
+.pc-top-bar .top-bar__wrap-2 {
+
+}
+.menu-box-1 {
+
+}
+.menu-box-1 .top-bar-menu-1 {
+
+}
+.menu-box-1 .top-bar-menu-1 > ul > li > a {
+    padding: 0 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color : #55585b
+}
+.pc-section-video{
+
+}
+
+.pc-section-banner{
+
+}
+.pc-section-banner .section-banner{
+    min-height: 593px;
+
+
+}
+.section-banner-1{
+    background-image:url(/images/섹션배너1.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.section-banner-1__text-box > span{
+    margin-top: 5px;
+}
+
+.section-banner-2{ 
+    background-image:url(/images/섹션배너2.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.section-banner-2__text-box > span{
+    margin-top: 5px;
+} 
+.section-banner-3{ 
+    background-image:url(/images/섹션배너3.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.section-banner-3__text-box > span{
+    margin-top: 5px;
+}
+.section-banner-4{ 
+    background-image:url(/images/섹션배너4.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.section-banner-4__text-box > span{
+    margin-top: 5px;
+}
+.section-banner-5{
+    min-height: 275px;
+}
+.section-banner5__text{
+    color: #1ecad3;
+    text-align: center;   
+    
+}
+.section-banner5__text > p {
+	font-size: 20px;
+}
+.section-banner5__rolling img{
+    display : block;
+    width: 140px;
+}
+
+
+/* 모바일 CSS */
+.mobile-top-bar{
+
+}
+.mobile-top-bar .mobile-top-bar__logo{
+
+}
+.mobile-top-bar_burger-menu >span > i{
+    color: #1ecad3;
+    font-size: 20px;
+}
+.mobile-section-banner .section-banner{
+
+}.mobile-section-banner .section-banner-1{
+    background-image: url(/images/모바일섹션배너1.png);
+}
+.mobile-section-banner .section-banner-2{
+    background-image: url(/images/모바일섹션배너2.png);
+}.mobile-section-banner .section-banner-3{
+    background-image: url(/images/모바일섹션배너3.png);
+}
+.mobile-section-banner .section-banner-4{
+    background-image: url(/images/모바일섹션배너4.png);
+}
+.section-banner .section-banner-5{
+    min-height: 275px;
+}
+.section-banner .section-banner-5__text{
+    color: #1ecad3;
+    text-align: center;   
+    
+}
+.section-banner .section-banner-5__text > p {
+	font-size: 16px;
+}
+.section-banner-5__rolling img{
+    display : block;
+    width: 140px;
+}
+/* 데스크탑 및 모바일 구분  */
+/* 화면너비가 992이상일때 (데스크탑) */
+@media(min-width: 992px){
+    header.mobile-top-bar{display: none;}
+    .mobile-section-video{display: none;}
+    .mobile-section-banner{display: none;}
+    
+}
+/* 태블릿 바 구현 766 ~ 991 */
+@media (max-width:992px) and (min-width:766px) {
+    /* header.mobile-top-bar{display:flex;} */
+    .pc-top-bar{display: none;}
+    .mobile-section-video{display: none;}
+    .mobile-section-banner{display: none;}
+}
+
+/* 화면너비가 991이하 일때(모바일) */
+@media(max-width:766px){
+    .pc-top-bar{display: none;}
+    .pc-section-video{display: none;}
+    .pc-section-banner{display: none;}
+}
+/* 모바일 너비일때 pc관련 태그들이 출현하지 않음  */

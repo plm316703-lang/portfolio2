@@ -1,0 +1,216 @@
+    
+        html, body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Noto Sans KR', sans-serif; /* 깔끔한 폰트 적용 */
+            box-sizing: border-box;
+        }
+
+        /* 모든 링크의 기본 밑줄 제거 및 기본 색상 통일 */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* 1. 헤더 전체 컨테이너 */
+        .pc-top {
+            width: 100%;
+            background-color: #ffffff; /* 녹색 배경을 흰색으로 변경 */
+            box-shadow: 0 1px 0px rgba(0,0,0,0.05); /* 하단에 은은한 구분선 효과 */
+        }
+
+        /* 2. 상단 3분할 영역 */
+        .menu-top {
+            display: flex;
+            max-width: 1200px; /* 전체 콘텐츠가 너무 퍼지지 않도록 가이드라인 설정 */
+            margin: 0 auto;
+            padding: 20px 20px 0 20px;
+        }
+
+        .left-container {
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+
+        .logo {
+            flex-grow: 1;
+            flex-basis: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .logo img {
+            object-fit: contain;
+        }
+
+        .right-container {
+            flex-grow: 1;
+            flex-basis: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; /* 우측 끝으로 내부 정렬 */
+            justify-content: center;
+        }
+
+        /* 3. 우측 상단 유틸리티 메뉴 (LOGIN, JOIN 등) */
+        .login {
+            /* margin-bottom: 10px; */
+        }
+
+        .top-small-menu {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .top-small-menu li {
+            list-style: none;
+            margin-left: 20px; /* 글자 사이 간격 확보 */
+            font-size: 13px;
+            font-weight: 500;
+            color: #8c8c8c; /* 연한 회색 처리 */
+            letter-spacing: 0.5px;
+            
+        }
+
+        /* 4. 우측 하단 타원형 CTA 버튼 (제주누보, 양조장) */
+        .non {
+            display: flex;
+            gap: 10px; /* 버튼 사이의 간격 */
+            margin: 20px 0px 0px 0px;
+            padding: 4px 0px 4px 20px;
+            height: 25px;
+            
+    
+            
+        }
+
+        .non a {
+            display: inline-block;
+            padding: 2px 19px; /* 텍스트 주변 여백을 늘려 타원형으로 만듦 */
+            font-size: 15px;
+            font-weight: bold;
+            color: #ffffff; /* 글자색 흰색 */
+            border-radius: 25px; /* 완벽한 타원형 생성 */
+            border: none; /* 보라색 테두리 제거 */
+            /* box-sizing: border-box; */
+        }
+        
+        /* 첫 번째 버튼: 논알콜 제주누보 구매 (코랄/오렌지) */
+        .non a:nth-child(1) {
+            background-color: #ff7659;
+        }
+        .non a:nth-child(1):hover {
+            color: #ff7659;
+            background-color: white;
+            /* border: 1px solid #ff7659; */
+            box-shadow: inset 0 0 0 1px #ff7659;
+            transition: background-color .5s, color .1s;
+            
+            /* box-sizing: border-box; */
+        }
+
+        /* 두 번째 버튼: 양조장 예약 (민트/청록) */
+        .non a:nth-child(2) {
+            background-color: #1bc4db;
+        }
+        .non a:nth-child(2):hover {
+            background-color: #1f9eaf;
+            color: white;
+            transition: background-color .5s, color .1s;
+        }
+
+        /* 5. 하단 메인 네비게이션 영역 */
+        .menu-bottom {
+            display: flex;
+            justify-content: center;
+            
+            margin-top: 15px;
+        }
+
+        .menu-small {
+            display: flex;   
+            padding: 0;
+            margin: 0; 
+        }
+
+        .menu-small li {
+            list-style: none;
+            padding: 20px 40px; /* 메뉴 상하좌우 여백 */
+            font-size: 16px;
+            font-weight: 500; /* 볼드체 */
+            color: #535252;
+            letter-spacing: 0.5px;
+        }
+
+        /* 메인 메뉴 호버 효과 (선택 사항) */
+        .menu-small li:hover {
+            color: #727272;
+            transition: 0.5s;
+        }
+        .pc-video{
+            width: 100%;         /* 부모 요소의 너비를 100% 차지 */
+            aspect-ratio: 16 / 9; /* 영상의 고정 비율 (필요에 따라 21/9 등으로 수정 가능) */
+            overflow: hidden;    /* 영역 밖으로 나가는 영상 부분은 숨김 */
+        }
+        .video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;   /* 중요: 영상 비율이 컨테이너와 달라도 빈 곳 없이 꽉 채움 */
+        }
+        .pc-section-banner1{
+            background-image:url("/image/섹션배너1.png");
+            background-position: 50% 50%;
+            background-size:cover;
+            background-repeat: no-repeat;
+            
+        }
+        .h1{ 
+            height: 50px;
+        }
+        .section-log1{
+            width: auto;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+        }
+        .h2{
+            height: 30px;
+        }
+        .section-down1{
+            display: flex;
+            align-items: center;
+            justify-content: end; /* 내부 요소들을 화면 중앙으로 정렬 */
+            max-width: 1200px;       /* 헤더 menu-top과 동일한 가이드라인 설정으로 통일감 부여 */
+            margin: 0 auto;          /* 가이드라인 내부에서 가운데 정렬 */
+            width: 100%;
+            gap: 60px;               /* 맥주 캔과 텍스트 사이의 여백을 원본 비율에 맞게 확보 */
+            padding: 0 40px;         /* 양옆 최소 여백 지정 */
+            box-sizing: border-box;
+        }
+        .section-down-img1 {
+            flex: 0 0 auto;          /* 이미지 크기가 줄어들거나 늘어나지 않도록 고정 */
+            height: 266px;           /* 원본 맥주 캔 비율에 맞춰 높이 확장 (기존 260px은 다소 작음) */
+            width: 200px;             /* 비율 유지 */
+        }
+        .section-down-span1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start; /* 텍스트 시작점 좌측 정렬 */
+            flex: 1;                 /* 남은 공간을 차지하도록 설정 */
+            color: #ffffff;          /* 텍스트 색상 흰색 지정 */
+        }
+        .section-down-span1 span {
+            margin: 0;
+            font-size: 17px;         /* 글자 크기 조정 */
+            font-weight: 500;
+            line-height: 1.7;        /* 행간을 넓혀 부드럽고 시원한 느낌 강조 */
+            letter-spacing: -0.5px;  /* 자간 조절로 깔끔함 유지 */
+            word-break: keep-all;    /* 한글 단어가 어색하게 끊기지 않도록 설정 */
+        }
+                

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 패딩과 테두리를 너비에 포함시켜 계산을 직관적으로 만듦 */
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px; /* 고정된 헤더 높이만큼 본문을 아래로 내림 */
+}
+
+/* 2. 레이아웃과 포지셔닝 (Header) */
+.navbar {
+    position: fixed; /* 스크롤을 내려도 상단에 고정 */
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1a1a1a;
+    color: white;
+    display: flex; /* 요소들을 가로로 배치 */
+    justify-content: space-between; /* 로고는 왼쪽, 메뉴는 오른쪽으로 밀어냄 */
+    align-items: center; /* 세로 중앙 정렬 */
+    padding: 0 40px;
+    z-index: 1000; /* 다른 요소들보다 항상 위에 표시되도록 설정 */
+}
+
+.nav-links {
+    list-style: none; /* 리스트의 점(bullet) 제거 */
+    display: flex;
+    gap: 20px; /* 메뉴 사이의 간격 */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none; /* 링크의 밑줄 제거 */
+}
+
+/* 3. 타이포그래피와 공간 분할 (Hero Section) */
+.hero-section {
+    height: 80vh; /* 화면 높이의 80% 차지 */
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column; /* 요소들을 세로로 쌓음 */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #0056b3;
+}
+
+/* 4. 시각적 꾸밈 및 애니메이션 (Button) */
+.btn-primary, .btn-submit {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; /* 모서리 둥글게 */
+    margin-top: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s; /* 색상 변화를 0.3초 동안 부드럽게 처리 */
+}
+
+.btn-primary:hover, .btn-submit:hover {
+    background-color: #003d82; /* 마우스를 올렸을 때 색상 변경 */
+}
+
+/* 5. 테이블 및 폼 디자인 */
+.content-section {
+    max-width: 800px;
+    margin: 60px auto; /* 중앙 정렬 */
+    padding: 0 20px;
+}
+
+.spec-table {
+    width: 100%;
+    border-collapse: collapse; /* 테이블 테두리 겹침 제거 */
+    margin-top: 20px;
+}
+
+.spec-table th, .spec-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.spec-table th {
+    background-color: #f8f9fa;
+}
+
+.form-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 약간의 그림자로 입체감 부여 */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #777;
+}
